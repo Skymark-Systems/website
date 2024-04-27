@@ -6,29 +6,29 @@ export default function Statistics() {
 	return (
 		<div className="mx-auto max-w-3xl px-4 py-20 md:py-24">
 			<h2 className="mb-8 text-center text-base text-indigo-900 sm:text-lg md:mb-16">
-				Impact of <span className="text-indigo-500"> Military Drones</span> on{' '}
+				Impact of <span className="text-yellow-800"> Drones</span> on{' '}
 				Warfare
 			</h2>
 
 			<div className="flex flex-col items-center justify-center sm:flex-row">
 				<Stat
-					num={60.5}
+					num={1.0}
                     decimals={1}
-					suffix="K+"
-					subheading="casualties from drone strikes each year"
+					suffix="M+"
+					subheading="drones Ukraine is aiming to make in 2024"
 				/>
 				<div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
 				<Stat
-					num={25.7}
-					decimals={1}
+					num={50}
+					decimals={0}
 					suffix="K+"
-					subheading="active military drones deployed worldwide"
+					subheading="FPV drones the Ukrainian army is acquiring per month"
 				/>
 				<div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
 				<Stat
-					num={35}
+					num={20.21}
 					suffix="B+"
-					subheading="estimated market value (in USD) by 2025"
+					subheading="The Global Military Drone Market value"
 				/>
 			</div>
 		</div>

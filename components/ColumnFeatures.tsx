@@ -18,7 +18,7 @@ const features: FeatureType[] = [
 		id: 1,
 		callout: 'How it Works',
 		title: 'IFF Technology',
-        description: 'The IFF drone strike tool utilizes state-of-the-art Identification Friend or Foe (IFF) technology to accurately distinguish between friendly and hostile targets in real-time. By leveraging advanced algorithms and sensor integration, our system ensures precise target identification, minimizing the risk of friendly fire incidents and enhancing situational awareness on the battlefield.',
+        description: 'The drone IFF tool utilizes state-of-the-art Identification Friend or Foe (IFF) technology to accurately distinguish between friendly and hostile targets in real-time. By leveraging RF technology and advanced cyber security algorithms, our system ensures precise target identification, minimizing the risk of friendly fire incidents and enhancing situational awareness on the battlefield.',
 		contentPosition: 'r',
 		image:
 			'https://images.unsplash.com/photo-1611878583599-5a1ba474063b?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -26,8 +26,8 @@ const features: FeatureType[] = [
 	{
 		id: 2,
 		callout: "How it's Made",
-		title: "Premium Quality",
-        description: 'Our IFF drone strike tool is meticulously crafted using premium-quality materials and cutting-edge manufacturing processes. Each component undergoes rigorous testing and quality assurance procedures to ensure reliability, durability, and performance in the most demanding operational environments. From design to production, we prioritize excellence and precision to deliver a superior product that meets the highest standards of quality and craftsmanship.',
+		title: "Durable, Secure, Affordable",
+        description: 'Our drone IFF tool is meticulously crafted using premium-quality materials and cutting-edge manufacturing processes. Each component undergoes rigorous testing and quality assurance procedures to ensure reliability, durability, and performance in the most demanding operational environments. From design to production, we prioritize excellence precision, and security to deliver a superior product that meets the highest standards of quality and craftsmanship.',
 		contentPosition: 'l',
 		image:
 			'https://images.unsplash.com/photo-1548430842-2de69aaf6bc8?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -36,21 +36,12 @@ const features: FeatureType[] = [
 		id: 3,
 		callout: 'Usage ',
 		title: "Easy to Use",
-        description: 'The IFF drone strike tool is designed for intuitive and efficient use in the field. With a user-friendly interface and simplified operation, operators can quickly and effectively deploy the system to identify and engage potential threats with confidence. Whether conducting reconnaissance missions or supporting ground forces, our tool empowers operators with actionable intelligence and real-time decision-making capabilities to enhance mission success and operational effectiveness.',
+        description: 'Skymark is an incredibly easy-to-use point and click system. Operators look in the direction of a drone and click a button to scan it. The small pointer will flash green if the drone is friendly and has been tagged as such.',
 
 		contentPosition: 'r',
 		image:
-			'https://images.unsplash.com/photo-1488263590619-bc1fff43b6c1?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	},
-	{
-		id: 4,
-		callout: 'Protection',
-		title: 'Nulls Drone Strikes',
-		description:'Drone strikes, often conducted remotely and autonomously, have become a significant aspect of modern warfare. These aerial attacks utilize unmanned aerial vehicles (UAVs), commonly known as drones, to target specific locations or individuals with precision-guided munitions. ',
-		contentPosition: 'l',
-		image:
-			'https://images.unsplash.com/photo-1500252185289-40ca85eb23a7?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-	},
+			'/images/soldiers-drone.jpg',
+	}
 ]
 
 export default function ColumnFeatures() {
@@ -136,7 +127,7 @@ const Content = ({
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5, ease: 'easeInOut' }}
 				>
-					<span className="rounded-full bg-indigo-600 px-2 py-1.5 text-xs font-medium text-white">
+					<span className="rounded-full bg-yellow-800 px-2 py-1.5 text-xs font-medium text-white">
 						{featureInView.callout}
 					</span>
 					<p className="my-3 text-5xl font-bold">{featureInView.title}</p>

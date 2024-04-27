@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function NewsPage() {
   return (
-    <div>page</div>
+    <div className='flex flex-row items-center justify-center h-screen'>In Construction</div>
   )
 }

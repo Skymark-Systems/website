@@ -7,9 +7,8 @@ export default function HeroText() {
 	const phrases = [
 		'Affordable',
 		'Reliable',
-		'Consistent',
-		'Easy to Use',
-		'Unparalleled',
+		'Secure',
+		'Easy to Use'
 	]
 	return (
 		<section

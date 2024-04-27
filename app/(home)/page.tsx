@@ -12,9 +12,11 @@ export default function Home() {
 			<SmoothScroll>
 				<HeroText />
 				<ColumnFeatures />
-				<StackedCardTestimonials />
+				{// <StackedCardTestimonials />
+      }
 				<Statistics />
-				<Footer />
+				{ // <Footer />
+}
 			</SmoothScroll>
 		</div>
 	)
