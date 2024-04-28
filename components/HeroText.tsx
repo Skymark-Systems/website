@@ -10,6 +10,7 @@ export default function HeroText() {
 		'Secure',
 		'Easy to Use'
 	]
+    
 	return (
 		<section
 			className="hero-parent h-screen w-screen bg-cover px-4  lg:py-[18%] items-center text-center"

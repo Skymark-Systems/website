@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "SkyMark",
   description: "Leading the most reliable IFF drone technology.",
 };
-
+import { cn } from "@/utils/utils";
 export default function  RootLayout({
   children,
 }: Readonly<{
@@ -16,7 +16,7 @@ export default function  RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn('bg-black', inter.className)}>{children}</body>
     </html>
   );
 }

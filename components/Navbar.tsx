@@ -10,7 +10,7 @@ export const Navbar = () => {
 	return (
 		<nav
         // glass-nav fixed left-0 right-0 top-0 z-10 mx-auto max-w-6xl overflow-hidden border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur md:left-6 md:right-6 md:top-6 md:rounded-2xl
-			className="fixed left-[50%] top-8 flex sm:w-[400px] md:w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-200 z-50 backdrop-blurborder-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur"
+			className="fixed left-[50%] top-8 flex sm:w-[400px] md:w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-200 z-50 backdrop-blurborder-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur "
 		>
 			<Link href="/">
 				<Image

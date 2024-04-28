@@ -5,8 +5,8 @@ import { animate, useInView } from 'framer-motion'
 export default function Statistics() {
 	return (
 		<div className="mx-auto max-w-3xl px-4 py-20 md:py-24">
-			<h2 className="mb-8 text-center text-base text-indigo-900 sm:text-lg md:mb-16">
-				Impact of <span className="text-yellow-800"> Drones</span> on{' '}
+			<h2 className="mb-8 lg:text-4xl font-semibold text-center sm:text-xl md:mb-16">
+				Impact of <span className="text-secondary-content"> Drones</span> on{' '}
 				Warfare
 			</h2>
 
@@ -60,12 +60,12 @@ const Stat = ({ num, suffix, decimals = 0, subheading }: Props) => {
 	}, [num, decimals, isInView])
 
 	return (
-		<div className="flex w-72 flex-col items-center py-8 sm:py-0">
-			<p className="mb-2 text-center text-7xl font-semibold sm:text-6xl">
+		<div className="flex w-72 flex-col items-center py-8 sm:py-0 ">
+			<p className="mb-2 text-center text-7xl font-semibold sm:text-6xl text-yellow-800">
 				<span ref={ref}></span>
 				{suffix}
 			</p>
-			<p className="max-w-48 text-center text-neutral-600">{subheading}</p>
+			<p className="max-w-48 text-center text-secondary-content">{subheading}</p>
 		</div>
 	)
 }
