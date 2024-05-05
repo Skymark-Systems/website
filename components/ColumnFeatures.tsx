@@ -48,7 +48,7 @@ export default function ColumnFeatures() {
 	const [featureInView, setFeatureInView] = useState<FeatureType>(features[0])
 
 	return (
-		<section className="relative mx-auto max-w-7xl">
+		<section className="relative mx-auto max-w-7xl w-screen">
 			<SlidingFeatureDisplay featureInView={featureInView} />
 
 			{/* Offsets the height of SlidingFeatureDisplay so that it renders on top of Content to start */}
@@ -127,11 +127,11 @@ const Content = ({
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5, ease: 'easeInOut' }}
 				>
-					<span className="rounded-full bg-gray-900 px-2 py-1.5 text-xs font-medium text-white">
+					<span className="rounded-full bg-yellow-800 px-2 py-1.5 text-xs font-medium text-white">
 						{featureInView.callout}
 					</span>
-					<p className="my-3 text-5xl font-bold text-white">{featureInView.title}</p>
-					<p className="text-white">{featureInView.description}</p>
+					<p className="my-3 text-5xl font-bold text-foreground">{featureInView.title}</p>
+					<p className="text-secondary-content">{featureInView.description}</p>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0, y: 25 }}

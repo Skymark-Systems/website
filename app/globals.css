@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0; 
+  overflow: hidden;
+}
+
 .mask-with-browser-support {
   mask: linear-gradient(black, black), linear-gradient(black, black);
   mask-clip: content-box, border-box;
