@@ -9,6 +9,7 @@ import ColumnFeatures from '@/components/ColumnFeatures'
 import BentoFooter from '@/components/BentoFooter'
 
 export default function Home() {
+
 	return (
 		<div className="flex flex-col z-0 bg-zinc-950">
 			<SmoothScroll>

@@ -9,15 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
     "@studio-freight/react-lenis": "^0.0.47",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
+    "lucide-react": "^0.378.0",
     "next": "14.2.3",
     "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.1.0",
-    "tailwind-merge": "^2.3.0"
+    "sharp": "^0.33.4",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
