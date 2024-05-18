@@ -8,7 +8,7 @@ export default function HeroText() {
 
 	return (
 		<section
-			className="h-screen w-screen flex flex-col bg-cover px-4 sm:py-[28%] md:py-[20%] py-[58%] items-center text-center"
+			className="h-screen w-screen overflow-x-clip flex flex-col bg-cover px-4 sm:py-[28%] md:py-[20%] py-[58%] items-center text-center"
 			style={{
 				backgroundImage: 'url(/images/soldier-opacity.jpg)',
 			}}

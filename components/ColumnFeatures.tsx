@@ -15,23 +15,23 @@ type FeatureType = {
 }
 
 const features: FeatureType[] = [
-	{
+  {
 		id: 1,
-		callout: 'How it Works',
-		title: 'IFF Technology',
-        description: 'The drone IFF tool utilizes state-of-the-art Identification Friend or Foe (IFF) technology to accurately distinguish between friendly and hostile targets in real-time. By leveraging RF technology and advanced cyber security algorithms, our system ensures precise target identification, minimizing the risk of friendly fire incidents and enhancing situational awareness on the battlefield.',
+		callout: "Why we Exist",
+		title: "Modern Warfare Challenges",
+        description: 'Modern military operations require portable and flexible Identification Friend or Foe (IFF) systems to prevent fratricide, especially with the rise of small commercial drones in action. Traditional IFF tools are large and stationary, unsuitable for dynamic combat environments like urban warfare. Recent conflicts in Israel and Ukraine highlight this issue, with significant friendly fire incidents and compromised positions. Current identification methods are slow and error-prone, underscoring the need for advanced, portable IFF technology.',
 		contentPosition: 'r',
 		image:
-			'https://images.unsplash.com/photo-1611878583599-5a1ba474063b?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+			'https://images.unsplash.com/photo-1548430842-2de69aaf6bc8?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	},
 	{
 		id: 2,
-		callout: "How it's Made",
-		title: "Durable, Secure, Affordable",
-        description: 'Our drone IFF tool is meticulously crafted using premium-quality materials and cutting-edge manufacturing processes. Each component undergoes rigorous testing and quality assurance procedures to ensure reliability, durability, and performance in the most demanding operational environments. From design to production, we prioritize excellence precision, and security to deliver a superior product that meets the highest standards of quality and craftsmanship.',
+		callout: 'How it Works',
+		title: 'IFF Technology',
+        description: 'The drone IFF tool utilizes state-of-the-art Identification Friend or Foe (IFF) technology to accurately distinguish between friendly and hostile targets in real-time. By leveraging RF technology and advanced cyber security algorithms, our system ensures precise target identification, minimizing the risk of friendly fire incidents and enhancing situational awareness on the battlefield.',
 		contentPosition: 'l',
 		image:
-			'https://images.unsplash.com/photo-1548430842-2de69aaf6bc8?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+			'https://images.unsplash.com/photo-1611878583599-5a1ba474063b?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 	},
 	{
 		id: 3,
@@ -51,7 +51,7 @@ export default function ColumnFeatures() {
 	return (
 		<section className="relative mx-auto max-w-7xl w-screen">
       <div
-      className='mx-auto text-center flex flex-row items-center justify-center px-10 py-10'
+      className='mx-auto text-center flex flex-row items-center justify-center px-10 h-screen'
     >
       <SkymarkLogo size={5}/>
     </div>
@@ -89,10 +89,10 @@ const SlidingFeatureDisplay = ({
 				layout
 				transition={{
 					type: 'spring',
-					stiffness: 400,
-					damping: 25,
+					stiffness: 1000,
+					damping: 90,
 				}}
-				className="h-fit w-3/5 rounded-xl p-8"
+				className="w-3/5 rounded-xl p-8"
 			>
 				<ExampleFeature featureInView={featureInView} />
 			</motion.div>
@@ -127,7 +127,7 @@ const Content = ({
 					featureInView.contentPosition === 'l' ? 'flex-start' : 'flex-end',
 			}}
 		>
-			<div className="grid h-full w-full place-content-center px-4 py-12 md:w-2/5 md:px-8 md:py-8">
+			<div className="grid w-full place-content-center px-4 md:w-2/5 md:px-8 py-8">
 				<motion.div
 					initial={{ opacity: 0, y: 25 }}
 					whileInView={{ opacity: 1, y: 0 }}

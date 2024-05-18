@@ -11,7 +11,7 @@ import BentoFooter from '@/components/BentoFooter'
 export default function Home() {
 
 	return (
-		<div className="flex flex-col z-0 bg-zinc-950">
+		<div className="flex flex-col z-0 bg-zinc-950 overflow-x-clip ">
 			<SmoothScroll>
 				<HeroText />
 				<ColumnFeatures />
