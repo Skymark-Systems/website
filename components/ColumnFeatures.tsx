@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { SkymarkLogo } from './Navbar'
 
 type FeatureType = {
 	id: number
@@ -49,10 +50,15 @@ export default function ColumnFeatures() {
 
 	return (
 		<section className="relative mx-auto max-w-7xl w-screen">
+      <div
+      className='mx-auto text-center flex flex-row items-center justify-center px-10 py-10'
+    >
+      <SkymarkLogo size={5}/>
+    </div>
 			<SlidingFeatureDisplay featureInView={featureInView} />
 
 			{/* Offsets the height of SlidingFeatureDisplay so that it renders on top of Content to start */}
-			<div className="-mt-[100vh] hidden md:block" />
+			<div className="-mt-[100vh] hidden md:block text-white" />
 
 			{features.map((s) => (
 				<Content
@@ -127,11 +133,11 @@ const Content = ({
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5, ease: 'easeInOut' }}
 				>
-					<span className="rounded-full bg-yellow-800 px-2 py-1.5 text-xs font-medium text-white">
+					<span className="rounded-full bg-gray-800 px-2 py-1.5 text-xs font-medium text-white">
 						{featureInView.callout}
 					</span>
-					<p className="my-3 text-5xl font-bold text-foreground">{featureInView.title}</p>
-					<p className="text-secondary-content">{featureInView.description}</p>
+					<p className="my-3 text-5xl font-bold text-foreground text-white ">{featureInView.title}</p>
+					<p className="text-secondary-content text-white">{featureInView.description}</p>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0, y: 25 }}

@@ -5,7 +5,7 @@ import { animate, useInView } from 'framer-motion'
 export default function Statistics() {
 	return (
 		<div className="mx-auto max-w-3xl px-4 py-20 md:py-24">
-			<h2 className="mb-8 lg:text-4xl font-semibold text-center sm:text-xl md:mb-16">
+			<h2 className="mb-8 lg:text-4xl font-semibold text-center sm:text-xl md:mb-16 text-white">
 				Impact of <span className="text-secondary-content"> Drones</span> on{' '}
 				Warfare
 			</h2>
@@ -17,14 +17,14 @@ export default function Statistics() {
 					suffix="M+"
 					subheading="drones Ukraine is aiming to make in 2024"
 				/>
-				<div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
+				<div className="h-[1px] w-12 bg-white sm:h-12 sm:w-[1px]" />
 				<Stat
 					num={50}
 					decimals={0}
 					suffix="K+"
 					subheading="FPV drones the Ukrainian army is acquiring per month"
 				/>
-				<div className="h-[1px] w-12 bg-indigo-200 sm:h-12 sm:w-[1px]" />
+				<div className="h-[1px] w-12 bg-white sm:h-12 sm:w-[1px]" />
 				<Stat
 					num={20.21}
 					suffix="B+"
@@ -61,11 +61,11 @@ const Stat = ({ num, suffix, decimals = 0, subheading }: Props) => {
 
 	return (
 		<div className="flex w-72 flex-col items-center py-8 sm:py-0 ">
-			<p className="mb-2 text-center text-7xl font-semibold sm:text-6xl text-yellow-800">
+			<p className="mb-2 text-center text-7xl font-semibold sm:text-6xl text-gray-300">
 				<span ref={ref}></span>
 				{suffix}
 			</p>
-			<p className="max-w-48 text-center text-secondary-content">{subheading}</p>
+			<p className="max-w-48 text-center text-secondary-content text-white">{subheading}</p>
 		</div>
 	)
 }
